@@ -49,6 +49,15 @@ These instructions will get you a copy of the project up and running on your loc
 <p>The script uses Selenium to automate the login process of a website. It first opens the website using the webdriver, finds the required fields (username, password, checkbox, submit button) using the element ID's, enters the login credentials, clicks the checkbox (if there is one) and finally clicks the submit button to complete the login process.</p>
 
 
+
+<h2> Showcase </h2>
+<p>Here is a demo of the script in action:</p>
+
+<h3>Demo</h3>
+<img src="/demo.gif" alt="Demo">
+
+
+
 <h2>Note</h2>
 
 <p>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</p>
