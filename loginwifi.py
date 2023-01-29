@@ -1,7 +1,7 @@
 #importing the required libraries
 
 from selenium import webdriver #pip install selenium
-from selenium.webdriver.common.by import By #pip install selenium-webdriver
+from selenium.webdriver.common.by import By 
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC 
 
@@ -14,7 +14,7 @@ element = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.I
 
 # find the username field and enter the username
 username = driver.find_element(By.ID, "accountIn") # change the ID to the ID of the username field
-username.send_keys('Enter Your Account Username Here') # change the username to your username
+username.send_keys('Enter Your Account Username Here') # change he username to your username
 
 
 # find the password field and enter the password
