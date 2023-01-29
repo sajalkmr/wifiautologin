@@ -84,6 +84,7 @@ These instructions will get you a copy of the project up and running on your loc
 <h2>Note</h2>
 
 <p>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</p>
+<p> Also it is assumed that the Wifi is open and your laptop is getting connected to it on boot.
 
 <br>
 
