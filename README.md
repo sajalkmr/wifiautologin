@@ -1,10 +1,10 @@
 <h1>Wifi Login Automation with Selenium</h1>
 <p>A script that automates the login process of a website using Selenium webdriver.</p>
-
+<br>
 <h1>Getting Started</h1>
 These instructions will get you a copy of the project up and running on your local machine.
-
-
+<br>
+<br>
 
 <h2>Requirements</h2>
 <ul>
@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 
-
+<br>
 
 <h2>How to Run</h2>
 <ol>
@@ -33,7 +33,7 @@ These instructions will get you a copy of the project up and running on your loc
   <li>Open a command prompt in the same directory and Run the script using <code>python3 loginwifi.py</code></li>
 </ol>
 
-
+<br>
 
 <h2>Running the script on Windows Login (Startup)</h2>
 <ol>
@@ -50,7 +50,7 @@ These instructions will get you a copy of the project up and running on your loc
 </ol>
 
 
-
+<br>
 
 <h2>Running the script on Linux login (Startup)</h2>
 <ol>
@@ -61,34 +61,35 @@ These instructions will get you a copy of the project up and running on your loc
   <li>Add the following line to the end of the file: <code>python3 /path/to/your/script.py &</code></li>
   <li>Save the file and exit nano editor by pressing <kbd>Ctrl</kbd> + <kbd>X</kbd> then <kbd>Y</kbd> and then <kbd>Enter</kbd>.</li>
   <li>Logout and log back in to your session for the changes to take effect.</li>
-
+<br>
 <p><strong>Note:</strong> Replace the <code>/path/to/your/script.py</code> with the actual path to your script.</p>
 </ol>
+</ol>
 
-
-
+<br>
 
 <h2>Working of the Script</h2>
 <p>The script uses Selenium to automate the login process of a website. It first opens the website using the webdriver, finds the required fields (username, password, checkbox, submit button) using the element ID's, enters the login credentials, clicks the checkbox (if there is one) and finally clicks the submit button to complete the login process.</p>
 
 
+<br>
 
 <h2> Showcase </h2>
 <p>Here is a demo of the script in action:</p>
 
-<h3>Demo</h3>
 <img src="/demo.gif" alt="Demo">
 
-
+<br>
 
 <h2>Note</h2>
 
 <p>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</p>
 
-
+<br>
 
 <h2>Contributing</h2>
 <p>Any Contribution in the form of issues and pull requests are welcome. If you have an idea for a new feature or found a bug, please open an issue. If you have already fixed the issue, please create a pull request with your changes.</p>
+<br>
 <h2>License</h2>
 <p>This project is licensed under the MIT License - see the <a href="https://github.com/sajalkmr/wifiautologin/blob/main/LICENSE">LICENSE</a> file for details.</p>
 
