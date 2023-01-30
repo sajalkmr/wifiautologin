@@ -48,7 +48,7 @@ These instructions will get you a copy of the project up and running on your loc
   
   <li>The script will now run every time your Windows boot</li>
 </ol>
-
+<br>
 <h2>Running the script on Windows Login (after logout)</h2>
 <ol>
 
@@ -67,17 +67,58 @@ These instructions will get you a copy of the project up and running on your loc
 <ol>
 <p>You can automate this Python script to run on Linux login by adding it to the <code>~/.bashrc</code> file or the appropriate session startup script.</p>
 <p>Here are the steps to do this:</p>
-<ol>
+
   <li>Open the terminal and enter the following command: <code>nano ~/.bashrc</code></li>
   <li>Add the following line to the end of the file: <code>python3 /path/to/your/script.py &</code></li>
   <li>Save the file and exit nano editor by pressing <kbd>Ctrl</kbd> + <kbd>X</kbd> then <kbd>Y</kbd> and then <kbd>Enter</kbd>.</li>
   <li>Logout and log back in to your session for the changes to take effect.</li>
 <br>
 <p><strong>Note:</strong> Replace the <code>/path/to/your/script.py</code> with the actual path to your script.</p>
-</ol>
+
 </ol>
 
 <br>
+
+<h2>Running the script on MacOS boot (Startup)</h2>
+<ol>
+  <li>Create a new file in the following directory: <code>/Library/LaunchDaemons</code></li>
+
+<li>You can use the Terminal to create the file by typing: <code>sudo nano /Library/LaunchDaemons/[filename].plist</code></li>
+<li>Add the following content to the file, replacing the paths and script name with the appropriate information for your script:</li>
+  <br>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>[filename]</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/python</string>
+      <string>[full path to script].py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
+```
+
+  
+  <li>Save and exit the file, then restart your Mac.</li> 
+  <li>This should run your Python script on every Mac boot.</li>
+  </ol>
+  <br>
+
+
+
+
+
+
+
+
+
 
 <h2>Working of the Script</h2>
 <p>The script uses Selenium to automate the login process of a website. It first opens the website using the webdriver, finds the required fields (username, password, checkbox, submit button) using the element ID's, enters the login credentials, clicks the checkbox (if there is one) and finally clicks the submit button to complete the login process.</p>
