@@ -9,7 +9,7 @@ driver = webdriver.Chrome(executable_path= r'D:\\Coding\\py\\chromedriver.exe') 
 
 # navigate to the login page URL
 driver.get("http://192.168.46.1:20097/local/auth/custom/portal.htm?portalType=portal1&gw_ip=192.168.46.1&ip=192.168.42.28&mac=c8e2.65cf.7f38&net=1&rmac=0&tabs=pwd-voucher-oneclick-account&cf=plcy1.php&mobile=2&hq=0&poup=0&langSw=0&url=http%3A%2F%2Fwww%2Emsftconnecttest%2Ecom%2Fredirect") # change the URL to your wifi login page
-element = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.ID, "accountIn"))) # change the ID to the ID of the username field
+element = WebDriverWait(driver, 15).until(EC.visibility_of_element_located((By.ID, "accountIn"))) # change the ID to the ID of the username field
 
 
 # find the username field and enter the username

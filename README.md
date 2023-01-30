@@ -2,7 +2,7 @@
 <p>A script that automates the login process of a website using Selenium webdriver. Originally built to login to my hostel wifi automatically.</p>
 <br>
 <h1>Getting Started</h1>
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will get you a copy of the project up and running on your local machine. 
 <br>
 <br>
 
@@ -30,12 +30,12 @@ These instructions will get you a copy of the project up and running on your loc
   <li>Replace the ID's of the elements in the script with the actual ID's of the elements on the login page (username field, password field, checkbox, submit button etc.)</li>
   <li>Save the changes to the script</li>
   
-  <li>Open a command prompt in the same directory and Run the script using <code>python3 loginwifi.py</code></li>
+  <li>Open a command prompt in the same directory and Run the script using <code>python loginwifi.py</code></li>
 </ol>
 
 <br>
 
-<h2>Running the script on Windows Boot (Startup)</h2>
+<h2>Running the script on Windows Boot (Startup) - Method 1</h2>
 <ol>
   <li>Create a shortcut of the .py file</li>
   <li>Locate the startup folder in Windows:
@@ -46,18 +46,20 @@ These instructions will get you a copy of the project up and running on your loc
   </li>
   <li>Move the shortcut of the .py file to the Startup folder</li>
   
-  <li>The script will now run every time your Windows boot</li>
+  <li>The script will now run every time your Windows boot (Not when you log out)</li>
 </ol>
 <br>
-<h2>Running the script on Windows Login (after logout)</h2>
+<h2>Running the script on Windows Login & Boot - Method 2</h2>
 <ol>
 
 <li>Search and select "Task Scheduler" from the start menu.</li>
 <li>Click "Create Task..." in the "Actions" pane on the right.</li>
 <li>Fill in the "General" tab with a name and description for the task.</li>
-<li>Select the "Triggers" tab, click "New", and set the desired frequency (e.g. "At log on" or You can also use this to run it on boot).</li>
+<li>Change "Configure for" to "Windows 10" or your version of Windows.</li>
+<li>Select the "Triggers" tab, click "New", and set the desired frequency (e.g. "At log on" or You can also use this to run it "At startup").</li>
 <li>Select the "Actions" tab, click "New", and choose "Start a program".</li>
 <li>Enter the full path to your Python .py script in the "Program/script" field.</li>
+<li>In Conditions, uncheck "Start the task only if the computer is on AC power".</li>
 <li>Click "OK" to save the task.</li>
 
 </ol>
@@ -107,7 +109,7 @@ These instructions will get you a copy of the project up and running on your loc
 
   
   <li>Save and exit the file, then restart your Mac.</li> 
-  <li>This should run your Python script on every Mac boot.</li>
+  <li>This should run your Python script on every boot.</li>
   </ol>
   <br>
 
@@ -136,14 +138,23 @@ These instructions will get you a copy of the project up and running on your loc
 <h2>Note</h2>
 
 <p>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</p>
-<p> Also it is assumed that the Wifi is open and your laptop is getting connected to it on boot.
+<p> Also it is assumed that the Wifi is open and your laptop is getting connected to it on boot.</p>
+<p> The script is tested on Windows 11. It should work on other versions of Windows as well. It is not tested on MacOS or Linux.   </p>
+<p> It is tested on Chrome browser. It should work on other browsers as well. </p>
+<p> It is tested on a website with a username, password entry; checkbox and submit button. It should work on other websites as well. </p>
+<p> Let me know if you face any issues. </p>
+
+
 
 <br>
 
 <h2>Contributing</h2>
+
 <p>Any Contribution in the form of issues and pull requests are welcome. If you have an idea for a new feature or found a bug, please open an issue. If you have already fixed the issue, please create a pull request with your changes.</p>
 <br>
+
 <h2>License</h2>
+
 <p>This project is licensed under the MIT License - see the <a href="https://github.com/sajalkmr/wifiautologin/blob/main/LICENSE">LICENSE</a> file for details.</p>
 
 
