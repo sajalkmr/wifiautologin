@@ -1,5 +1,5 @@
 <h1>Wifi Login Automation with Selenium</h1>
-<p>A script that automates the login process of a website using Selenium webdriver.</p>
+<p>A script that automates the login process of a website using Selenium webdriver. Currently built to login to my hostel wifi automatically.</p>
 <br>
 <h1>Getting Started</h1>
 These instructions will get you a copy of the project up and running on your local machine.
