@@ -1,5 +1,5 @@
 <h1>Wifi Login Automation with Selenium</h1>
-<p>A script that automates the login process of a website using Selenium webdriver. Currently built to login to my hostel wifi automatically.</p>
+<p>A script that automates the login process of a website using Selenium webdriver. Originally built to login to my hostel wifi automatically.</p>
 <br>
 <h1>Getting Started</h1>
 These instructions will get you a copy of the project up and running on your local machine.
@@ -35,7 +35,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <br>
 
-<h2>Running the script on Windows Login (Startup)</h2>
+<h2>Running the script on Windows Boot (Startup)</h2>
 <ol>
   <li>Create a shortcut of the .py file</li>
   <li>Locate the startup folder in Windows:
@@ -46,13 +46,24 @@ These instructions will get you a copy of the project up and running on your loc
   </li>
   <li>Move the shortcut of the .py file to the Startup folder</li>
   
-  <li>The script will now run every time you log in to Windows</li>
+  <li>The script will now run every time your Windows boot</li>
 </ol>
 
+<h2>Running the script on Windows Login (after logout)</h2>
+<ol>
 
+<li>Search and select "Task Scheduler" from the start menu.</li>
+<li>Click "Create Task..." in the "Actions" pane on the right.</li>
+<li>Fill in the "General" tab with a name and description for the task.</li>
+<li>Select the "Triggers" tab, click "New", and set the desired frequency (e.g. "At log on" or You can also use this to run it on boot).</li>
+<li>Select the "Actions" tab, click "New", and choose "Start a program".</li>
+<li>Enter the full path to your Python .py script in the "Program/script" field.</li>
+<li>Click "OK" to save the task.</li>
+
+</ol>
 <br>
 
-<h2>Running the script on Linux login (Startup)</h2>
+<h2>Running the script on Linux Boot (Startup)</h2>
 <ol>
 <p>You can automate this Python script to run on Linux login by adding it to the <code>~/.bashrc</code> file or the appropriate session startup script.</p>
 <p>Here are the steps to do this:</p>
