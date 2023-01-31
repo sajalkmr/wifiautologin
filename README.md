@@ -137,12 +137,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 <h2>Note</h2>
 
-<p>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</p>
-<p> Also it is assumed that the Wifi is open and your laptop is getting connected to it on boot.</p>
-<p> The script is tested on Windows 11. It should work on other versions of Windows as well. It is not tested on MacOS or Linux.   </p>
-<p> It is tested on Chrome browser. It should work on other browsers as well. </p>
-<p> It is tested on a website with a username, password entry; checkbox and submit button. It should work on other websites as well. </p>
-<p> Let me know if you face any issues. </p>
+<li>The script assumes that the elements in the wifi login page (username field, password field, submit button) can be located using the ID selector. If the elements have different selectors (e.g. class name, name), the code needs to be updated accordingly.</li>
+<li> Also it is assumed that the Wifi is open and your laptop is getting connected to it on boot.</li>
+<li> The script is tested on Windows 11 and Ubuntu 22.04.1 . It should work on other versions of Windows & Linux as well. It is not tested on MacOS.    </li>
+
+<li> Let me know if you face any issues. </li>
 
 
 
