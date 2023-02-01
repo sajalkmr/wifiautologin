@@ -81,7 +81,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <br>
 
-<h2>Running the script on MacOS boot (Startup)</h2>
+<h2>Running the script on MacOS boot- Not tested (Startup)</h2>
 <ol>
   <li>Create a new file in the following directory: <code>/Library/LaunchDaemons</code></li>
 
