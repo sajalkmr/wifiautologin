@@ -147,7 +147,7 @@ For me it was <code>C:\Users\Sajal\AppData\Local\Programs\Python\Python311\pytho
 
 <li> Let me know if you face any issues. </li>
 
-<h2>Limitaion</h2>
+<h2>Limitation</h2>
 <li> If you are using the shortcut method, it will only run on startup </li>
 <li> If you are using the Task Scheduler method, it will work on startup and when you log out.  </li>
 
