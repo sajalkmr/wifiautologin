@@ -10,6 +10,16 @@ ser = Service(r'D:\\Coding\\py\\chromedriver.exe') # change path to chromedriver
 
 op = webdriver.ChromeOptions()
 
+op.add_argument("--disable-extensions")
+op.add_argument("--disable-notifications")
+op.add_argument("--disable-popup-blocking")
+op.add_argument("--ignore-certificate-errors")
+op.add_argument("--ignore-ssl-errors")
+op.add_argument("--no-default-browser-check")
+op.add_argument("--no-first-run")
+op.add_argument("--disable-gpu")
+op.add_argument("--window-size=800,600") # change the window size to your liking
+
 driver = webdriver.Chrome(service=ser, options=op)
 
 # navigate to the login page URL

@@ -54,11 +54,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 <li>Search and select "Task Scheduler" from the start menu.</li>
 <li>Click "Create Task..." in the "Actions" pane on the right.</li>
-<li>Fill in the "General" tab with a name and description for the task.</li>
+<li>Fill in the "General" tab with a name and description for the task. Check "Run with highest privileges"</li>
 <li>Change "Configure for" to "Windows 10" or your version of Windows.</li>
 <li>Select the "Triggers" tab, click "New", and set the desired frequency (e.g. "At log on" or You can also use this to run it "At startup").</li>
 <li>Select the "Actions" tab, click "New", and choose "Start a program".</li>
-<li>Enter the full path to your Python .py script in the "Program/script" field.</li>
+<li>Enter the full path to your pythonw.exe file in the "Program/script" field. </li>
+<li>You can find the location by typing "where python" in cmd. pythonw.exe will be in same folder.
+For me it was <code>C:\Users\Sajal\AppData\Local\Programs\Python\Python311\pythonw.exe</code></li>
+<li> Enter the full path to your script in the "Start in (optional)" field. For me it was <code>D:\code\py</code></li>
+<li>Enter the name of your script in the "Add arguments (optional)" field. For me it was <code>loginwifi.pyw</code> (Rename the .py file to .pyw)</li>
 <li>In Conditions, uncheck "Start the task only if the computer is on AC power".</li>
 <li>Click "OK" to save the task.</li>
 
@@ -142,6 +146,10 @@ These instructions will get you a copy of the project up and running on your loc
 <li> The script is tested on Windows 11 and Ubuntu 22.04.1 . It should work on other versions of Windows & Linux as well. It is not tested on MacOS.    </li>
 
 <li> Let me know if you face any issues. </li>
+
+<h2>Limitaion</h2>
+<li> If you are using the shortcut method, it will only run on startup </li>
+<li> If you are using the Task Scheduler method, it will work on startup and when you log out.  </li>
 
 
 
