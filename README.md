@@ -2,7 +2,7 @@
 <p>A script that automates the login process of a website using Selenium webdriver. Originally built to login to my hostel wifi automatically.</p>
 <br>
 <h1>Getting Started</h1>
-These instructions will get you a copy of the project up and running on your local machine. 
+
 <br>
 <br>
 
